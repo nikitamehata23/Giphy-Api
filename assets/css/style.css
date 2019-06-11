@@ -1,0 +1,78 @@
+
+a:not([href]):not([tabindex]) {
+    color:yellow;
+    font-weight: 600;
+	font-size: 40px;
+	font-family: Pacifico;
+}
+body{
+	background-image: url(https://wallpapertag.com/wallpaper/full/2/7/2/701667-top-valentine-background-images-1920x1080.jpg);
+}
+.navbar {
+	border: 5px solid;
+	border-color: rgb(91, 194, 235);
+	background-image: url(https://wallpapercave.com/wp/ClILpxL.jpg);
+}
+.navbar:hover{
+	color: antiquewhite;
+	background-image: url(https://cdn.wallpapersafari.com/82/78/zRi7sO.jpg);
+}
+.btn{
+	background-color: rgb(233, 135, 152);
+	color: black;
+	font-family: fantasy;
+}
+#button-Holder {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+#gif-Section {
+    display: flex;
+    font-size: .7rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px;
+}
+
+.card-body {
+    padding: .1rem;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: 700;
+}
+.btn-sm {
+    margin: 2px;
+	display: inline-block;
+	padding: 10px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color:black;
+	background-color:orange;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	margin:10px;
+  }
+  
+  .button:hover {background-color: pink}
+  
+  .button:active {
+	background-color: #08520a;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+
+.list-group-item {
+    font-size: .7rem;
+    padding: 0;
+}
