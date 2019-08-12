@@ -37,19 +37,7 @@ function displayGifStills(){
     }
  }
 
-//Display the Buttons
-$("#searchGif").on("submit", function(event){
-    event.preventDefault();
-    selectedItem = $("#searchGif").find("input").val().trim();
 
-    if(preloadedGifs.indexOf(selectedItem) > -1){
-        return;
-    }
-    $("#searchGif").find("input").val("");
-    displayButton(selectedItem.trim());
-    preloadedGifs.push(selectedItem);
-    getGifs(selectedItem, 10);
-});
 
 function getGifs(item, numResults){
     //Get the search value
