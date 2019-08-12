@@ -51,7 +51,18 @@ $("#searchGif").on("submit", function(event){
     getGifs(selectedItem, 10);
 });
 
+function getGifs(item, numResults){
+    //Get the search value
+    let searchString = $("#searchGif").find("input").val();
 
+    let queryText = "https://api.giphy.com/v1/gifs/search?q=" + item + "&limit=" + numResults + "&api_key=umwi8JJIuDRiB1p2JugbyJObZrmbA0eD";
+    $.ajax({
+        url: queryText,
+        method: "GET"
+    }).then(function (response){
+        fillGifDataArray(response.data);
+    })
+}
 
 function fillGifDataArray(rawDataArray){
     //reset the object
