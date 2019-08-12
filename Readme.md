@@ -20,6 +20,7 @@
 - GIPHY API 
 - Jquery for Dom Manipulation
 - Bootstrap for Page Layout 
+- CSS for styling
 - Google Fonts 
 
 ## Code Explained
@@ -33,4 +34,9 @@
 -------------
 
  
+## What I gained from this from this assignment ?
+
+- I learned about the AJAX "GET" method and pulling data from an API. 
+- I also learned about the specific way to create an event listener on a dynamically created object, which initially gave me some problems. 
+- I also gained experience in mixing my own CSS styles with Bootstrap, and gained more experience in using Bootstrap in the general .
 
