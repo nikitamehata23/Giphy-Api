@@ -20,7 +20,18 @@ function displayButton(item){
      $("#button-Holder").append('<button type="button" class="btn btn-success btn-sm">' + item + '</button>');
 }
 
-
+function displayGifStills(){
+    $("#gif-Section").empty();
+    for( var i = 0; i < gifData.length; i++){
+        var htmlText =
+            '<div class="card border-success" style="max-width: 18rem;">' +
+                    // '<p class="list-group-item">Rating: ' + gifData[i].rating +'</p>'
+                    '<img id=' + i + '" class="card-img-top" src="' + gifData[i].fixedHeightStill +' alt="Card image cap" state="still">' +
+                    '<p class="list-group-item">Rating: ' + gifData[i].rating +'</p>'
+                    '<p class="card-title"> Title: ' + gifData[i].title + '</p>' +
+                    // '<p class="list-group-item">Rating: ' + gifData[i].rating +'</p>'
+                   
+            '</div>';
     
         $("#gif-Section").append(htmlText);
     }
